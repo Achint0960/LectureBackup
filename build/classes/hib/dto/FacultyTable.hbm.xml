@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hib.dto">
+    <class name="FacultyTable" table="faTab1">
+    <id name="faID" column="fa_Id">
+<!--        <generator class = "native"/>-->
+    </id>
+    <property name="faName" column="faculty_name"/>
+    <property name="faPassword" column="faculty_pass"/>
+    <property name="faDepartment" column="faculty_dept"/>
+    <property name="faSubject" column="faculty_subject"/>
+    <property name="faContactNO" column="faculty_contact"/>
+    <property name="faEmailID" column="operator_mail_id"/>
+    <property name="address" />
+    <property name="DOB" />
+    </class>
+</hibernate-mapping>

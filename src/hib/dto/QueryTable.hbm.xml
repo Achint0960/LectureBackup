@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hib.dto">
+    <class name="QueryTable" table="qTab1">
+
+    <id name="SerialNo" column="serialNo">
+        <generator class="native"/>
+    </id>
+    <property name="stuName"/>
+    <property name="FaName"/>
+    <property name="query"/>
+    <property name="requestDate"/>
+    <property name="to" column="to1"/>
+    <property name="from" column="from1"/>
+    <property name="status"/>
+    </class>
+</hibernate-mapping>

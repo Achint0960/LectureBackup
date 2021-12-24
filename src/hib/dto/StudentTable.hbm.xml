@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package = "hib.dto">
+    <class name="StudentTable" table="stTab">
+    <id name="stuID" column="student_Id"/>
+    <property name="stuName" column="student_name"/>
+    <property name="stuPassword" column="student_pass"/>
+    <property name="dob" column="dob"/>
+    <property name="stuCourse" column="student_course"/>
+    <property name="stuSection" column="student_section"/>
+    <property name="stuYear" column="student_year"/>
+    <property name="stuContactNO" column="student_contact"/>
+    </class>
+</hibernate-mapping>
